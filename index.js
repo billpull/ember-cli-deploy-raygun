@@ -63,7 +63,6 @@ module.exports = {
 
             let promises = mapFiles.map((file) => {
               // match the sourcemap with the distfile
-              let mapFileRoot = file.split('-').slice(0, -1);
 
               let matchingDistFile = context.distFiles
                 .filter((distFile) => !distFile.endsWith('.map'))
